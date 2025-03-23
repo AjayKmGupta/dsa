@@ -15,3 +15,9 @@ buildNumber.properties
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+# Ignore all compiled .class files
+*.class
+# Ignore Eclipse settings directory
+.settings/
+
+
