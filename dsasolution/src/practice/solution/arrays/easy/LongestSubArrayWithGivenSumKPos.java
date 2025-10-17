@@ -12,24 +12,24 @@ public class LongestSubArrayWithGivenSumKPos {
 		
 		int k = 2;
 
-		int len = findLongestSubArrayWithSumKLength(array, k);
+		int len = findLongestSubArrayWithSumK(array, k);
 
 		System.out.println(len);
 
-		len = findLongestSubArrayWithSumKLengthOptimal(array, k);
+		len = findLongestSubArrayWithSumKOptimal(array, k);
 
 		System.out.println(len);
 
 		// This will not work for negative numbers
 		// It works only for positive numbers
 		// For negative numbers findLongestSubArrayWithSumKLengthOptimal will work
-		len = findLongestSubArrayWithSumKLengthWithTwoPointers(array, k);
+		len = findLongestSubArrayWithSumKWithTwoPointers(array, k);
 
 		System.out.println(len);
 
 	}
 
-	private static int findLongestSubArrayWithSumKLength(int[] array, int k) {
+	private static int findLongestSubArrayWithSumK(int[] array, int k) {
 
 		int maxLen = 0;
 		
@@ -46,7 +46,7 @@ public class LongestSubArrayWithGivenSumKPos {
 		return maxLen;
 	}
 
-	private static int findLongestSubArrayWithSumKLengthOptimal(int[] array, int k) {
+	private static int findLongestSubArrayWithSumKOptimal(int[] array, int k) {
 		Map<Long, Integer> preSumMap = new HashMap<>();
 		long sum = 0;
 		int maxLen = 0;
@@ -68,7 +68,7 @@ public class LongestSubArrayWithGivenSumKPos {
 		return maxLen;
 	}
 
-	private static int findLongestSubArrayWithSumKLengthWithTwoPointers(int[] array, int k) {
+	private static int findLongestSubArrayWithSumKWithTwoPointers(int[] array, int k) {
 		int left = 0, right = 0;
 		int sum = 0;
 		int maxLen = 0;
