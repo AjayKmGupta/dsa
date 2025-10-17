@@ -12,7 +12,7 @@ public class LCMAndGCD {
         int lcm = 1;
         int[] result = new int[2];
         
-        int maxNum = a > b ? a : b;
+        int maxNum = Math.max(a, b);
         int minNum = a < b ? a : b;
         int divisor = 2;
         
