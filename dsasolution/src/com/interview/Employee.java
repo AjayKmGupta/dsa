@@ -2,8 +2,8 @@ package com.interview;
 
 public class Employee {
 
-	private String employeeId;
-	private String employeeName;
+	private final String employeeId;
+	private final String employeeName;
 
 	private Employee(Builder eBuilder) {
 		this.employeeId = eBuilder.employeeId;

@@ -3,7 +3,7 @@ package practice.solution.arrays.medium;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MaorityElements {
+public class MajorityElements {
 
     public static void main(String[] args) {
 
