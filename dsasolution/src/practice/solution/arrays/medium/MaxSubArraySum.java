@@ -53,22 +53,22 @@ public class MaxSubArraySum {
     private static long findMaxSubArraySum(int[] arr) {
 
         long sum = 0;
-        long max = Long.MIN_VALUE;
+        long maxSum = Long.MIN_VALUE;
 
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
-            if (sum > max) {
-                max = sum;
+            if (sum > maxSum) {
+                maxSum = sum;
             }
             if (sum < 0) {
                 sum = 0;
             }
         }
         // This is for empty sum, if none matches
-        if (max < 0) {
-            max = 0;
+        if (maxSum < 0) {
+            maxSum = 0;
         }
-        return max;
+        return maxSum;
     }
 
 }
